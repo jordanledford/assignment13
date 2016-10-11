@@ -7,8 +7,8 @@ document.querySelector("#inject-html button").addEventListener('click',function(
 
 document.querySelector("#double button").addEventListener('click',function doubler(num){
   var doubleNumber = document.getElementById("compoundInvestment")
-  doubleNumber.innerHTML
-  doublenumber.parseInt(){
+  var doubleMan = doublenumber.innerHMTL.parseInt()
+  doubleMan(int){
     num * 2 = var newNum;
     return newNum;
   }
@@ -36,7 +36,7 @@ document.querySelector("#color-circle button").addEventListener('click',function
 
 document.querySelector("#blow-up button").addEventListener('click',function(onClick){
   // TASK #4}
-  var redCircle =  document.querySelector('.circle-red');
+  var redCircle =  document.querySelector(".circle-red");
 
   var elementStyles =  window.getComputedStyle(redCircle);
   	console.log('w', elementStyles.width);
@@ -57,8 +57,10 @@ document.querySelector("#blow-up button").addEventListener('click',function(onCl
   if (doubleWidth >= 320){
   redCircle.style.width = 40 + "px";
   redCircle.style.height = 40 + "px";
+  } else {
+  return;
   }
-  
+
 })
 
 document.querySelector("#student workspace #remove-button").addEventListener('click',function(){

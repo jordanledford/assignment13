@@ -66,15 +66,13 @@ document.querySelector("#reverse-squares button").addEventListener('click',funct
 
 document.querySelector("#pig-latin button").addEventListener('click',function(){
    var taskContainer = document.querySelectorAll('#tasks li')
-   console.log(taskContainer[1].innerHTML)
    for (var i = 0; i < taskContainer.length; i++){
       var currentArr = taskContainer[i].innerHTML
       var newString = ''
       for (var a = currentArr.length -1; a >= 0; a = a -1){
-         console.log(currentArr[a])
          newString = newString + currentArr[a]
       }
-      taskContainer[i].innerHTML = newStrg
+      taskContainer[i].innerHTML = newString
    }
 })
 
